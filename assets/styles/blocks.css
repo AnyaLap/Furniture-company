@@ -60,7 +60,7 @@
 
 .section-wood__woods {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fill, 280px);
     gap: 174px;
     padding-left: 132px;
 }
