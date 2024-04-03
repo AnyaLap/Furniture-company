@@ -1,5 +1,85 @@
+/* Общие для всего проекта - начало */
+
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url(../fonts/Montserrat-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: 'KyivType';
+    src: url(../fonts/KyivTypeSansMedium.otf);
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url(../fonts/Inter-VariableFont_slnt_wght.ttf);
+}
+
+.title {
+    font-family: 'KyivType', sans-serif;
+    font-size: 90px;
+    line-height: 132.9%;
+    text-transform: uppercase;
+    /* color: white; */
+}
+
+.text {
+    font-family: 'Inter', sans-serif;
+    font-size: 30px;
+    line-height: 36px;
+    /* color: white; */
+}
+
+.text_bold {
+    font-family: 'Inter', sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 36px;
+    /* color: white; */
+}
+
+.img_small {
+    width: 205px;
+    height: 205px;
+    border-radius: 42px;
+}
+/* Общие для всего проекта - конец */
+
+/* THE WOOD WE WORK WITH - начало */
+
+.title_wood {
+    width: 746px;
+    margin-left: 243px;
+}
+
+.section-wood__woods {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 174px;
+    padding-left: 132px;
+}
+
+.section-wood__woods .text_bold {
+    margin: 39px 0;
+    padding-left: 75px;
+}
+
+.proscons__point {
+    margin-bottom: 24px;
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+}
+
+.bullet {
+    width: 25px;
+    height: 25px;
+}
+
+/* THE WOOD WE WORK WITH - конец */
