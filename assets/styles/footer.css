@@ -3,3 +3,46 @@
     margin: 0;
     box-sizing: border-box;
 }
+
+@font-face {
+    font-family: 'Inter';
+    src: url(../fonts/Inter-VariableFont_slnt_wght.ttf);
+}
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    background-color: #222021;
+}
+
+.footer__container{
+    display: flex;
+    justify-content: space-around;
+    padding: 5em;
+}
+
+.footer__privacy{
+padding-left: 8.7em;
+padding-bottom: 4em;
+}
+
+.container__address{
+display: flex;
+align-items: center;
+}
+
+.geo-text,
+.link_dec {
+    font-family: 'Inter', sans-serif;
+    font-size: 30px;
+    line-height: 139.4%;
+    color: #fff;
+}
+
+.privacy-link_size{
+    font-size: 20px;
+}
+
+.link_dec{
+    text-decoration: none;
+}
