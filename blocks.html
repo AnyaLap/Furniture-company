@@ -5,16 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./assets/styles/normalize.css">
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="./assets/styles/blocks.css">
 </head>
-<body>
+<body class="body">
 
 <!-- THE WOOD WE WORK WITH - начало -->
 
-    <section class="section section-wood">
+    <section class="section section_wood">
         <h1 class="title title_wood">The Wood We Work With</h1>
-        <div class="section-wood__woods">
-            <div class="section-wood__woods_oak">
+        <div class="section_wood__woods">
+            <div class="section_wood__woods_oak">
                 <img src="assets/images/oak.png" alt="oak" class="img_small">
                 <p class="text_bold">Oak</p>
                 <ul class="proscons">
@@ -36,7 +37,7 @@
                     </li>
                 </ul>
             </div>
-            <div class="section-wood__woods_buk">
+            <div class="section_wood__woods_buk">
                 <img src="assets/images/buk.png" alt="buk" class="img_small">
                 <p class="text_bold">Buk</p>
                 <ul class="proscons">
@@ -50,7 +51,7 @@
                     </li>
                 </ul>
             </div>
-            <div class="section-wood__woods_ash">
+            <div class="section_wood__woods_ash">
                 <img src="assets/images/ash.png" alt="ash" class="img_small">
                 <p class="text_bold">Ash</p>
                 <ul class="proscons">
@@ -67,7 +68,71 @@
         </div>
     </section>
 
-<!-- THE WOOD WE WORK WITH - конец -->
+    <!-- THE WOOD WE WORK WITH - конец -->
+
+    <!-- OUR WORK - начало -->
+    <section class="section section_work">
+        <h1 class="title title_work">Our Work</h1>
+        <div class="carousel" aria-label="Gallery">
+            <ul class="carousel__viewport">
+                <li id="carousel__slide1" tabindex="0" class="carousel__slide">
+                    <img class="carousel__picture" src="assets/images/kitchen.png" alt="kitchen">
+                    <div class="carousel__snapper">
+                        <a href="#carousel__slide3" class="carousel__prev"><img src="assets/images/arrow_left.png" alt="arrow_left"></a>
+                        <a href="#carousel__slide2" class="carousel__next"><img src="assets/images/arrow_right.png" alt="arrow_right"></a>
+                    </div>
+                </li>
+                <li id="carousel__slide2" tabindex="0" class="carousel__slide">
+                    <img class="carousel__picture" src="assets/images/kitchen_bw.png" alt="kitchen_bw">
+                    <div class="carousel__snapper">
+                        <a href="#carousel__slide1" class="carousel__prev"><img src="assets/images/arrow_left.png" alt="arrow_left"></a>
+                        <a href="#carousel__slide3" class="carousel__next"><img src="assets/images/arrow_right.png" alt="arrow_right"></a>
+                    </div>
+                </li>
+                <li id="carousel__slide3" tabindex="0" class="carousel__slide">
+                    <img class="carousel__picture" src="assets/images/kitchen.png" alt="kitchen">
+                    <div class="carousel__snapper">
+                        <a href="#carousel__slide2" class="carousel__prev"><img src="assets/images/arrow_left.png" alt="arrow_left"></a>
+                        <a href="#carousel__slide1" class="carousel__next"><img src="assets/images/arrow_right.png" alt="arrow_right"></a>
+                    </div>
+                </li>
+            </ul>
+            <aside class="carousel__navigation">
+                <ul class="carousel__navigation-list">
+                    <li class="carousel__navigation-item">
+                        <a href="#carousel__slide1" class="carousel__navigation-button">Go to slide 1</a>
+                    </li>
+                    <li class="carousel__navigation-item">
+                        <a href="#carousel__slide2" class="carousel__navigation-button">Go to slide 2</a>
+                    </li>
+                    <li class="carousel__navigation-item">
+                        <a href="#carousel__slide3" class="carousel__navigation-button">Go to slide 3</a>
+                    </li>
+                </ul>
+            </aside>
+        </div>
+    </section>
+    
+
+<!-- OUR WORK - конец -->
+
+<!-- ANY QUESTIONS? - начало -->
+
+    <section class="section section_questions">
+        <h1 class="title title_questions">Any Questions?</h1>
+        <div class="form-container">
+            <form class="form">
+                <div><input class="input" type="text" id="name" placeholder="Your name"></div>
+                <div><input class="input" type="tel" id="phone" placeholder="Your telephone number"></div>
+                <div><textarea class="input input_question" type="text" id="question" placeholder="Your question"></textarea></div>
+                <button type="submit" class="button button_small text_bold">Send</button>
+            </form>
+            <span class="text form-container__text">Write to us, and we will be sure to answer all your questions and give you a comprehensive consultation.</span>
+        </div>        
+    </section>
+
+
+<!-- ANY QUESTIONS? - конец -->
 
 
 
