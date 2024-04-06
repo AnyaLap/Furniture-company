@@ -53,6 +53,11 @@
 
 /* OUR WORK - начало */
 
+.section_work {
+    scrollbar-color: transparent transparent;
+    scrollbar-width: 0px;
+}
+
 .title_work {
     margin-left: 243px;
 }
