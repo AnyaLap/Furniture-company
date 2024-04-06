@@ -305,14 +305,20 @@
     text-align: right;
 }
 
-.section_questions__img {
+.section_questions__img-container {
+    position: relative;
+}
+
+.section_questions__img-container__img {
     position: absolute;
     z-index: -1;
-    /* Дальше параметры на каждой странице свои */
-    right: 50px;
-    top: 2980px;
+    /* Остальные параметры разные на каждой странице */
     width: 477.31px;
     height: 482.47px;
+    left: 850px;
+    right: 180px;
+    top: -180px;
+    bottom: 0;
 }
 
 /* ANY QUESTIONS? - конец */
