@@ -1,5 +1,6 @@
 .body {
-    background-image: url(../images/background_gallery.png);
+    background-image: url(../images/background_home.png);
+    background-repeat: no-repeat;
     background-size: cover;
 }
 
@@ -52,11 +53,6 @@
 
 /* OUR WORK - начало */
 
-* {
-    scrollbar-color: transparent transparent;
-    scrollbar-width: 0px;
-}
-
 .title_work {
     margin-left: 243px;
 }
@@ -68,6 +64,8 @@
     width: 1306px;
     height: 806px;
     perspective: 100px;
+    scrollbar-color: transparent transparent;
+    scrollbar-width: 0px;
 }
 
 .carousel__viewport {

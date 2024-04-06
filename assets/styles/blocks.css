@@ -119,11 +119,6 @@
 
 /* OUR WORK - начало */
 
-* {
-    scrollbar-color: transparent transparent;
-    scrollbar-width: 0px;
-}
-
 .title_work {
     margin-left: 498px;
 }
@@ -135,6 +130,8 @@
     width: 1306px;
     height: 806px;
     perspective: 100px;
+    scrollbar-color: transparent transparent;
+    scrollbar-width: 0px;
 }
 
 .carousel__viewport {
