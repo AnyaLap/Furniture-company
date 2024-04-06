@@ -8,7 +8,70 @@
     <link rel="stylesheet" href="./assets/styles/style.css">
     <link rel="stylesheet" href="./assets/styles/prices.css">
 </head>
-<body>
-    testkazakova
+<body class="body">
+    <header class="header">
+        <img class="logo" src="./assets/images/logo.png" alt="logo">
+        <nav class="nav">
+            <ul class="menu">
+                <li class="menu__item"><a class="menu-link" href="./gallery.html">Gallery</a></li>
+                <li class="menu__item"><a class="menu-link link_active" href="./prices.html">Prices for services</a></li>
+                <li class="menu__item"><a class="menu-link" href="./about.html">About Us</a></li>
+                <li class="menu__item"><a class="menu-link" href="./contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!-- PRICE LIST - начало -->
+        <section class="section section_prices">
+            <h1 class="title title_prices">Price List</h1>
+            <div class="pricelist">
+                <img src="assets/images/prices1.png" alt="price1" class="pricelist__price1">
+                <img src="assets/images/prices2.png" alt="price2" class="pricelist__price2">
+                <img src="assets/images/prices3.png" alt="price3" class="pricelist__price3">
+                <img src="assets/images/prices4.png" alt="price4" class="pricelist__price4">
+            </div>
+        </section>
+        <!-- PRICE LIST - конец -->
+
+        <!-- ANY QUESTIONS? - начало -->
+        
+        <section class="section section_questions">
+            <h1 class="title title_questions">Any Questions?</h1>
+            <div class="form-container">
+                <form class="form">
+                    <div><input class="input" type="text" id="name" placeholder="Your name"></div>
+                    <div><input class="input" type="tel" id="phone" placeholder="Your telephone number"></div>
+                    <div><textarea class="input input_question" type="text" id="question"
+                            placeholder="Your question"></textarea></div>
+                    <button type="button" class="button button_small text_bold">Send</button>
+                </form>
+                <span class="text form-container__text">Write to us, and we will be sure to answer all your questions and give
+                    you a comprehensive consultation.</span>
+            </div>
+            <div class="section_questions__img-container">
+                <img src="assets/images/questions_log.png" alt="log" class="section_questions__img-container__img">
+            </div>
+        </section>
+        
+        <!-- ANY QUESTIONS? - конец -->
+    </main>
+
+    <!-- ФУТЕР -->
+    <footer class="footer">
+        <section class="container">
+            <img class="logo" src="./assets/images/logo.png" alt="logo">
+            <div class="container__address phone">
+                <img class="phone-icon" src="./assets/images/phone_icon.png" alt="Phone">
+                <a class="phone-link text-dec" href="#phone">+420 000 000 000</a>
+            </div>
+            <div class="container__address geo">
+                <img class="icon" src="./assets/images/geo_icon.png" alt="Geo">
+                <p class="geo-text text-dec">Na Plzeňce 1166/0 150 00</p>
+            </div>
+        </section>
+        <section class="privacy">
+            <a class="privacy-link text-dec" href="./error.html">Privacy Policy</a>
+        </section>
+    </footer>
 </body>
 </html>
