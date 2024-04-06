@@ -1,5 +1,331 @@
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+.body {
+    background-image: url(../images/background_gallery.png);
+    background-size: cover;
 }
+
+/* ХЭДЕР НАЧАЛО */
+
+.header {
+    display: flex;
+    width: 100%;
+    flex: 0 0 auto;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3em 6em;
+
+    /* ДЛЯ СТРАНИЧЕК МЕНЮ */
+    border-radius: 0 0 79px 79px;
+    box-shadow: 0 -8px 52px 0 rgba(238, 238, 238, 0.17);
+    background: rgb(30, 12, 6);
+}
+
+.logo {
+    width: 197px;
+    height: 83.8px;
+}
+
+.menu {
+    display: flex;
+}
+
+.menu__item {
+    list-style-type: none;
+    padding-left: 2.3em;
+}
+
+.menu-link {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.25em;
+    font-weight: 700;
+    line-height: 1.5em;
+    text-decoration: none;
+    color: #fff;
+}
+
+/* ДЛЯ СТРАНИЧЕК МЕНЮ (АКТИВНАЯ ССЫЛКА)*/
+
+.link_active{
+    color: rgb(163, 184, 215);
+}
+
+/* ХЭДЕР КОНЕЦ */
+
+/* OUR WORK - начало */
+
+* {
+    scrollbar-color: transparent transparent;
+    scrollbar-width: 0px;
+}
+
+.title_work {
+    margin-left: 243px;
+}
+
+.carousel {
+    position: relative;
+    margin-left: 40px;
+    padding-top: 806px;
+    width: 1306px;
+    height: 806px;
+    perspective: 100px;
+}
+
+.carousel__viewport {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: 0;
+    padding: 0 10px;
+    width: 1306px;
+    height: 780px;
+    display: flex;
+    justify-items: center;
+    list-style-type: none;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+}
+
+.carousel__slide {
+    position: relative;
+    display: flex;
+    flex: 0 0 100%;
+    width: 1130px;
+    height: 760px;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    scroll-snap-align: center;
+    list-style-type: none;
+}
+
+.carousel__picture {
+    width: 1130px;
+    height: 754px;
+}
+
+.carousel__snapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    scroll-snap-align: center;
+}
+
+.carousel__navigation {
+    right: 0;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+}
+
+.carousel__navigation-list,
+.carousel__navigation-item {
+    display: inline-block;
+    list-style-type: none;
+}
+
+.carousel__navigation-button {
+    display: inline-block;
+    width: 26px;
+    height: 26px;
+    margin-right: 18px;
+    background: transparent;
+    background-clip: content-box;
+    border: 4px solid rgb(114, 139, 173);
+    border-radius: 50%;
+    font-size: 0;
+    transition: transform 0.1s;
+    cursor: pointer;
+}
+
+.carousel__navigation-button:active {
+    background: white;
+}
+
+.carousel::before,
+.carousel::after,
+.carousel__prev,
+.carousel__next {
+    position: absolute;
+    top: 0;
+    margin-top: 30%;
+    width: 4rem;
+    height: 4rem;
+    transform: translateY(-50%);
+}
+
+.carousel::before,
+.carousel__prev {
+    left: -1rem;
+}
+
+.carousel::after,
+.carousel__next {
+    right: -1rem;
+}
+
+.carousel::before,
+.carousel::after {
+    content: '';
+    z-index: 1;
+    background-size: 52px 52px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    pointer-events: none;
+}
+
+.carousel::before {
+    background-image: url(../images/arrow_left.png);
+}
+
+.carousel::after {
+    background-image: url(../images/arrow_right.png);
+}
+
+/* OUR WORK - конец */
+
+/* THE WOOD WE WORK WITH - начало */
+
+.title_wood {
+    width: 746px;
+    margin-left: 243px;
+}
+
+.section_wood__woods {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 280px);
+    gap: 174px;
+    padding-left: 132px;
+}
+
+.section_wood__woods .text_bold {
+    margin: 39px 0;
+    padding-left: 75px;
+}
+
+.proscons__point {
+    margin-bottom: 24px;
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+}
+
+.bullet {
+    margin-right: 10px;
+    width: 25px;
+    height: 25px;
+}
+
+/* THE WOOD WE WORK WITH - конец */
+
+/* ANY QUESTIONS? - начало */
+
+.section_questions {
+    padding-right: 104px;
+}
+
+.title_questions {
+    text-align: right;
+}
+
+.form-container {
+    display: flex;
+    padding-left: 122px;
+    justify-content: space-between;
+}
+
+.form {
+    margin-right: 64px;
+}
+
+.input {
+    width: 598px;
+    height: 77px;
+    margin-bottom: 23px;
+    padding: 18px;
+    box-sizing: border-box;
+    border: 4px solid rgb(114, 139, 173);
+    border-radius: 42px;
+    background: transparent;
+    color: white;
+}
+
+.input::placeholder {
+    font-family: Inter;
+    font-size: 30px;
+    line-height: 139.4%;
+    text-align: left;
+    align-items: top;
+    color: rgba(217, 217, 217, 0.51);
+}
+
+.input_question {
+    height: 257px;
+}
+
+.form-container__text {
+    width: 546px;
+    text-align: right;
+}
+
+.section_questions__img {
+    position: absolute;
+    z-index: -1;
+    right: 50px;
+    top: 2980px;
+    width: 477.31px;
+    height: 482.47px;
+}
+
+/* ANY QUESTIONS? - конец */
+
+/* ФУТЕР НАЧАЛО */
+
+.footer {
+    display: flex;
+    flex: 0 0 auto;
+    flex-direction: column;
+    align-items: start;
+    box-shadow: 0px -6px 52px 0px rgba(245, 245, 245, 0.17);
+    background: rgb(34, 32, 33);
+    padding: 5em 10em 4em 6em;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.container__address {
+    display: flex;
+    align-items: center;
+    padding-left: 5em;
+}
+
+.geo {
+    width: 25em;
+}
+
+.privacy {
+    padding-top: 4em;
+}
+
+.text-dec {
+    font-family: 'Inter', sans-serif;
+    font-size: 1.8em;
+    font-weight: 500;
+    line-height: 139.4%;
+    text-decoration: none;
+    color: #fff;
+}
+
+.privacy-link {
+    font-size: 1.25em;
+}
+
+/* ФУТЕР КОНЕЦ */
