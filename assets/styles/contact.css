@@ -3,3 +3,31 @@
     margin: 0;
     box-sizing: border-box;
 }
+.body{
+    background-image: url(../images/background_contact.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+}
+.contact{
+    display: flex;
+    justify-content: space-around;
+    margin: 10em 0;
+}
+.contact__section{
+    display: flex;
+    flex-direction: column;
+}
+.title-contact{
+    margin: 0 0 1.2em 1em;
+}
+.contact__card{
+    margin-top: 1.7em;
+}
+.card{
+    width: 100%;
+    border: 0;
+    border-radius: 3em;
+    width: 31em;
+    height: 27em;
+}

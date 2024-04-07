@@ -3,37 +3,11 @@
     margin: 0;
     box-sizing: border-box;
 }
-body{
+.body{
     background-image: url(../images/background_home.png), url(../images/background_logs.png);
     background-repeat: no-repeat;
-    background-color: rgb(34, 32, 33);
+    width: 100%;
 } 
-.header{
-    display: flex;
-    flex: 0 0 auto;
-    justify-content: space-between;
-    align-items: center;
-    padding: 3em 6em;
-}
-.logo{
-    width: 197px;
-    height: 83.8px;
-}
-.menu{
-    display: flex;
-}
-.menu__item{
-    list-style-type: none;
-    padding-left: 2.3em;
-}
-.menu-link{
-    font-family: 'Montserrat', sans-serif;
-    font-size: 1.25em;
-    font-weight: 700;
-    line-height: 1.5em;
-    text-decoration: none;
-    color: #fff;
-  }
   .error{
     display: flex;
     flex-direction: column;
@@ -45,7 +19,6 @@ body{
     line-height: 107.9%;
   }
   .error-text{
-    font-family: 'Inter', sans-serif;
     font-weight: 400;
     color: rgb(255, 219, 187);
     padding-top: 1em;

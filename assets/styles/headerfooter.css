@@ -25,6 +25,7 @@ body{
 
 .header{
     display: flex;
+    width: 100%;
     flex: 0 0 auto;
     justify-content: space-between;
     align-items: center;
@@ -57,9 +58,9 @@ body{
 
   /* ДЛЯ СТРАНИЧЕК МЕНЮ (АКТИВНАЯ ССЫЛКА)*/
 
-  /* .link_active:active{
+  .link_active{
   color: rgb(163, 184, 215);
-  } */
+  }
 
   /* ХЭДЕР КОНЕЦ */
 
@@ -83,12 +84,13 @@ body{
     display: flex;
     align-items: center;
     padding-left: 5em;
+    padding-bottom: 2em;
 }
 .geo{
     width: 25em;
 }
 .privacy{
-    padding-top: 4em;
+    padding-top: 3em;
 }
 .text-dec{
     font-family: 'Inter', sans-serif;
