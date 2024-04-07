@@ -8,7 +8,126 @@
     <link rel="stylesheet" href="./assets/styles/style.css">
     <link rel="stylesheet" href="./assets/styles/about.css">
 </head>
-<body>
+<body class="body">
+    <!-- ШАПКА -->
+    <header class="header">
+        <img class="logo" src="./assets/images/logo.png" alt="logo">
+        <nav class="nav">
+            <ul class="menu">    
+                <li class="menu__item"><a class="menu-link" href="./gallery.html">Gallery</a></li>
+                <li class="menu__item"><a class="menu-link" href="./prices.html">Prices for services</a></li>
+                <li class="menu__item"><a class="menu-link link_active" href="./about.html">About Us</a></li>
+                <li class="menu__item"><a class="menu-link" href="./contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
     
+    <main>
+        <!-- ABOUT US - начало -->
+        
+        <section class="section section_about">
+            <div class="section_about__group">
+                <div class="text section_about__group__text">
+                    <h1 class="title title_about">About Us</h1>
+                    <span class="text_bold">BIO CWT</span> - We manufacture solid wood products according to individual
+                    drawings. We make chairs, armchairs, wardrobes, beds and much more in our own workshop, equipped with all
+                    the necessary industrial equipment.
+                </div>
+                <div>
+                    <img class="section_about__img1" src="assets/images/about_carpenter.png" alt="">
+                </div>
+            </div>
+            <img class="section_about__img2" src="assets/images/about_drawing.png" alt="">
+        </section>
+        
+        <!-- ABOUT US - конец -->
+
+        <!-- OUR WORK - начало -->
+        
+        <section class="section section_work">
+            <h1 class="title title_work">Our Work</h1>
+            <div class="carousel" aria-label="Gallery">
+                <ul class="carousel__viewport">
+                    <li id="carousel__slide1" tabindex="0" class="carousel__slide">
+                        <img class="carousel__picture" src="assets/images/kitchen.png" alt="kitchen">
+                        <div class="carousel__snapper">
+                            <a href="#carousel__slide3" class="carousel__prev"></a>
+                            <a href="#carousel__slide2" class="carousel__next"></a>
+                        </div>
+                    </li>
+                    <li id="carousel__slide2" tabindex="0" class="carousel__slide">
+                        <img class="carousel__picture" src="assets/images/kitchen_bw.png" alt="kitchen_bw">
+                        <div class="carousel__snapper">
+                            <a href="#carousel__slide1" class="carousel__prev"></a>
+                            <a href="#carousel__slide3" class="carousel__next"></a>
+                        </div>
+                    </li>
+                    <li id="carousel__slide3" tabindex="0" class="carousel__slide">
+                        <img class="carousel__picture" src="assets/images/kitchen.png" alt="kitchen">
+                        <div class="carousel__snapper">
+                            <a href="#carousel__slide2" class="carousel__prev"></a>
+                            <a href="#carousel__slide1" class="carousel__next"></a>
+                        </div>
+                    </li>
+                </ul>
+                <aside class="carousel__navigation">
+                    <ul class="carousel__navigation-list">
+                        <li class="carousel__navigation-item">
+                            <a href="#carousel__slide1" class="carousel__navigation-button">Go to slide 1</a>
+                        </li>
+                        <li class="carousel__navigation-item">
+                            <a href="#carousel__slide2" class="carousel__navigation-button">Go to slide 2</a>
+                        </li>
+                        <li class="carousel__navigation-item">
+                            <a href="#carousel__slide3" class="carousel__navigation-button">Go to slide 3</a>
+                        </li>
+                    </ul>
+                </aside>
+            </div>
+        </section>
+        
+        
+        <!-- OUR WORK - конец -->
+
+        <!-- ANY QUESTIONS? - начало -->
+        
+        <section class="section section_questions">
+            <h1 class="title title_questions">Any Questions?</h1>
+            <div class="form-container">
+                <form class="form">
+                    <div><input class="input" type="text" id="name" placeholder="Your name"></div>
+                    <div><input class="input" type="tel" id="phone" placeholder="Your telephone number"></div>
+                    <div><textarea class="input input_question" type="text" id="question"
+                            placeholder="Your question"></textarea></div>
+                    <button type="button" class="button button_small text_bold">Send</button>
+                </form>
+                <span class="text form-container__text">Write to us, and we will be sure to answer all your questions and give
+                    you a comprehensive consultation.</span>
+            </div>
+            <div class="section_questions__img-container">
+                <img src="assets/images/questions_log.png" alt="log" class="section_questions__img-container__img">
+            </div>
+        </section>
+        <!-- ANY QUESTIONS? - конец -->
+        
+    </main>
+    
+    <!-- ФУТЕР -->
+    <footer class="footer">
+        <section class="container">
+            <img class="logo" src="./assets/images/logo.png" alt="logo">
+            <div class="container__address phone">
+                <img class="phone-icon" src="./assets/images/phone_icon.png" alt="Phone">
+                <a class="phone-link text-dec" href="#phone">+420 000 000 000</a>
+            </div>
+            <div class="container__address geo">
+                <img class="icon" src="./assets/images/geo_icon.png" alt="Geo">
+                <p class="geo-text text-dec">Na Plzeňce 1166/0 150 00</p>
+            </div>
+        </section>
+        <section class="privacy">
+            <a class="privacy-link text-dec" href="./error.html">Privacy Policy</a>
+        </section>
+    </footer>
 </body>
 </html>
