@@ -53,18 +53,30 @@
 /* PRICE LIST - начало */
 
 .title_prices {
-    margin-left: 238px;
-    margin-bottom: 116px;
+    margin-left: 15%;
+    margin-bottom: 5%;
 }
 
 .pricelist {
-    margin-left: 150px;
+    margin-top: 0;
+    margin-left: 10%;
+    margin-right: 10%;
     display: grid;
-    grid-template-columns: 611px 482px;
-    grid-template-rows: 500px 322px;
+    grid-template-columns: minmax(0.5fr, 50vw) minmax(0.4fr, 40vw);
+    grid-template-rows: minmax(30vw, 46.4vw);
     grid-template-areas: "pricelist__price1 pricelist__price2"
                          "pricelist__price3 pricelist__price4";
+    align-items: center;
     gap: 1rem;
+}
+
+.pricelist__price1,
+.pricelist__price2 {
+    max-height: 46.4vw;
+}
+.pricelist__price3,
+.pricelist__price4 {
+    max-height: 30vw;
 }
 
 /* PRICE LIST - конец */
@@ -185,6 +197,13 @@
 /* ФУТЕР КОНЕЦ */
 
 @media screen and (max-width: 1024px) {
+
+    /* OUR PRICES - начало */
+    .pricelist {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    /* OUR PRICES - конец */
 
     /* ANY QUESTIONS? - начало */
     .input {
