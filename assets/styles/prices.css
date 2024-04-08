@@ -183,3 +183,103 @@
 }
 
 /* ФУТЕР КОНЕЦ */
+
+@media screen and (max-width: 1024px) {
+
+    /* ANY QUESTIONS? - начало */
+    .input {
+        width: 324px;
+        height: 41px;
+    }
+
+    .input_question {
+        height: 134px;
+    }
+
+    .input::placeholder {
+        font-size: 20px;
+    }
+
+    .section_questions__img-container__img {
+        display: none;
+    }
+
+    /* ANY QUESTIONS? - конец */
+}
+
+@media screen and (max-width: 768px) {
+
+    /* ОБЩИЕ - начало */
+    .title {
+        font-size: 30px;
+        text-align: left;
+    }
+
+    .text {
+        font-size: 15px;
+        line-height: 120%;
+        text-align: left;
+    }
+
+    .text_bold {
+        font-size: 15px;
+        line-height: 120%;
+    }
+
+    .img_small {
+        width: 90px;
+        height: 90px;
+    }
+
+    .button {
+        height: 33px;
+        padding: 7px 21px;
+    }
+
+    .button_small {
+        width: 86px;
+    }
+
+    .button_large {
+        width: 195px;
+    }
+
+    .section {
+        margin-bottom: 80px;
+    }
+
+    /* ОБЩИЕ - конец */
+
+    /* OUR PRICES - начало */
+    .title_prices {
+        margin-bottom: 5%;
+        margin-left: 10%;
+        text-align: left;
+    }
+    /* OUR PRICES - конец */
+
+    /* ANY QUESTIONS? - начало */
+    .form-container {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .input::placeholder {
+        font-size: 13px;
+    }
+
+    .form-container__text {
+        margin-bottom: 46px;
+        width: 272px;
+        line-height: 120%;
+        text-align: left;
+    }
+
+    .title_questions {
+        padding-left: 10%;
+        text-align: left;
+    }
+
+    /* ANY QUESTIONS? - конец */
+
+}
