@@ -78,6 +78,7 @@
 
 /* ВРЕМЕННО */
 .body {
+    width: 100%;
     background-image: url(../images/background_home.png);
     background-repeat: no-repeat;
     background-size: cover;
@@ -85,6 +86,49 @@
     /* цвет, возможно, общий? */
 }
 /* ВРЕМЕННО */
+
+/* ХЭДЕР ТЕСТ */
+
+.header {
+    display: flex;
+    flex: 1 0 auto;
+    width: 100%;
+    padding: 3em 6em;
+    align-items: center;
+    border-radius: 0 0 79px 79px;
+    box-shadow: 0 -8px 52px 0 rgba(238, 238, 238, 0.17);
+    background: rgb(30, 12, 6);
+    background-size: cover;
+}
+
+.nav {
+    margin-left: auto;
+}
+
+.logo {
+    width: 197px;
+    height: 83.8px;
+}
+
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+}
+.menu__item {
+    margin-right: 10%;
+    list-style-type: none;
+}
+
+.menu-link {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.25em;
+    font-weight: 700;
+    line-height: 1.5em;
+    text-decoration: none;
+    color: #fff;
+}
+/* ХЭДЕР ТЕСТ */
+
 
 
 /* THE WOOD WE WORK WITH - начало */

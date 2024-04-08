@@ -65,7 +65,7 @@
     box-shadow: 0px 4px 52px 0px rgba(245, 245, 245, 0.17);
 }
 
-.section_about__group {
+.group {
     margin-bottom: 25px;
     display: flex;
     align-items: flex-end;
@@ -73,7 +73,7 @@
     flex-wrap: wrap;
 }
 
-.section_about__group__text {
+.group__text {
     margin-right: 3%;
     margin-bottom: 20px;
     max-width: 520px;
@@ -256,20 +256,24 @@
 @media screen and (max-width: 1280px) {
 
     /* ABOUT US - начало */
+    .section_about {
+        max-width: 80vw;
+    }
+
     .section_about__img1 {
         width: 350px;
     }
-
     .section_about__img2 {
         width: 170px;
     }
-
     /* ABOUT US - конец */
 
 }
 
 
 @media screen and (max-width: 1024px) {
+
+
 
     /* THE WOOD WE WORK WITH - начало */
     .proscons__point {
@@ -353,8 +357,8 @@
     }
 
     .img_small {
-        width: 90px;
-        height: 90px;
+        width: 111px;
+        height: 111px;
     }
 
     .button {
@@ -406,6 +410,7 @@
 
     /* ABOUT US - начало */
     .section_about {
+        margin-right: 20%;
         padding-left: 10%;
     }
 
@@ -413,8 +418,8 @@
         margin-bottom: 38px;
     }
 
-    .section_about__group__text {
-        max-width: 285px;
+    .group__text {
+        max-width: 80%;
     }
 
     .section_about__img1 {
