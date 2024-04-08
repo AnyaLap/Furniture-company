@@ -24,17 +24,25 @@ body{
 /* ХЭДЕР НАЧАЛО */
 
 .header{
-    display: flex;
-    width: 100%;
-    flex: 0 0 auto;
-    justify-content: space-between;
-    align-items: center;
-    padding: 3em 6em;
-
+     display: flex;
     /* ДЛЯ СТРАНИЧЕК МЕНЮ */
     border-radius: 0 0 79px 79px;
     box-shadow: 0 -8px 52px 0 rgba(238, 238, 238, 0.17);
-    background: rgb(30, 12, 6);
+    background-color: rgb(30, 12, 6);
+    background-size: cover;
+}
+.header__container{
+    display: flex;
+    width: 100vw;
+    flex: 0 0 auto;
+    justify-content: space-between;
+    align-items: center;
+    padding: 48px 96px;
+    /* border-radius: 0 0 79px 79px;
+    box-shadow: 0 -8px 52px 0 rgba(238, 238, 238, 0.17);
+    background-color: rgb(30, 12, 6);
+    background-size: cover; */
+   
 }
 .logo{
     width: 197px;
@@ -45,13 +53,13 @@ body{
 }
 .menu__item{
     list-style-type: none;
-    padding-left: 2.3em;
+    padding-left: 37px;
 }
 .menu-link{
     font-family: 'Montserrat', sans-serif;
-    font-size: 1.25em;
+    font-size: 20px;
     font-weight: 700;
-    line-height: 1.5em;
+    line-height: 24px;
     text-decoration: none;
     color: #fff;
   }
@@ -64,45 +72,84 @@ body{
 
   /* ХЭДЕР КОНЕЦ */
 
+  @media screen and (max-width: 768px){
+    .menu-link{
+        font-size: 1em;
+    }
+      }
+
   /* ФУТЕР НАЧАЛО */
 
 .footer{
     display: flex;
-    flex: 0 0 auto;
+    width: 100vw;
     flex-direction: column;
     align-items: start;
     box-shadow: 0px -6px 52px 0px rgba(245, 245, 245, 0.17);
     background: rgb(34, 32, 33);
-    padding: 5em 10em 4em 6em;
+    padding: 80px 160px 64px 96px;
 }
-.container{
+.footer__container{
     display: flex;
+    flex: 0 0 auto;
     align-items: center;
     justify-content: space-around;
 }
 .container__address{
     display: flex;
     align-items: center;
-    padding-left: 5em;
-    padding-bottom: 2em;
+    padding-left: 70px;
+    padding-bottom: 32px;
 }
 .geo{
-    width: 25em;
+    width: 400px;
 }
 .privacy{
-    padding-top: 3em;
+    padding-top: 48px;
 }
 .text-dec{
     font-family: 'Inter', sans-serif;
-    font-size: 1.8em;
+    font-size: 30px;
     font-weight: 500;
     line-height: 139.4%;
     text-decoration: none;
     color: #fff;   
 }
 .privacy-link{
-    font-size: 1.25em;
+    font-size: 20px;
 }
 /* ФУТЕР КОНЕЦ */
 
-  
+@media screen and (max-width: 768px){
+    .footer{
+        align-items: center;
+        padding: 15% 10% 10% 10%;
+    }
+    .footer__container{
+        flex-direction: column;
+        align-items: center;
+    }
+    .logo{
+        width: 162px;
+        height: 69px;
+        margin-bottom: 43px;
+    }
+    .container__address{
+        padding: 20px 0 0 0; 
+    }
+    .geo{
+        width: 80%;
+    }
+    .icon{
+        width: 24px;
+    }
+    .text-dec{
+        font-size: 20px;
+    }
+    .privacy-link{
+        font-size: 11px;
+    }
+    .privacy{
+        padding-top: 35px;
+    }
+      }

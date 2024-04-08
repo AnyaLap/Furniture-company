@@ -6,7 +6,8 @@
 .body{
     background-image: url(../images/background_home.png), url(../images/background_logs.png);
     background-repeat: no-repeat;
-    width: 100%;
+    background-size: 35%, 65%;
+    min-height: 100vh;
 } 
   .error{
     display: flex;
@@ -21,9 +22,14 @@
   .error-text{
     font-weight: 400;
     color: rgb(255, 219, 187);
-    padding-top: 1em;
+    padding-top: 16px;
   }
   .button_margin{
-    margin: 2em 0;
+    margin: 32px 0;
     text-decoration: none;
+  }
+  @media screen and(max-width:768) {
+    .error{
+      width: 100vw;
+    }
   }
