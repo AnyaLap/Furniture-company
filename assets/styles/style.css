@@ -26,42 +26,44 @@
 
 .title {
     font-family: 'KyivType', sans-serif;
-    font-size: 90px;
-    line-height: 132.9%;
+    font-size: clamp(30px, 8.7vw, 90px);
+    line-height: 1.4;
     text-transform: uppercase;
     color: white;
 }
 
 .text {
     font-family: 'Inter', sans-serif;
-    font-size: 30px;
-    line-height: 36px;
+    font-size: clamp(15px, 3vw, 30px);
+    line-height: 1.4;
     color: white;
 }
 
 .text_bold {
     font-family: 'Inter', sans-serif;
-    font-size: 30px;
+    font-size: clamp(15px, 3vw, 30px);
     font-weight: 700;
-    line-height: 36px;
+    line-height: 1.4;
     color: white;
 }
 
 .button {
-    height: 58px;
-    padding: 11px 70px;
+    max-height: clamp(33px, 5.6vw, 58px);
+    padding: clamp(7.5px, 1vmax, 11px) clamp(21px, 6vw, 70px);
     border: none;
     border-radius: 42px;
     background: rgb(114, 139, 173);
+    text-align: center;
+    line-height: 1;
     cursor: pointer;
 }
 
 .button_small {
-    width: 216px;
+    max-width: clamp(92px, 21vw, 216px);
 }
 
 .button_large {
-    width: 444px;
+    max-width: clamp(195px, 43vw, 444px);
 }
 
 .section {
