@@ -4,53 +4,6 @@
     background-size: cover;
 }
 
-/* ХЭДЕР НАЧАЛО */
-
-.header {
-    display: flex;
-    width: 100%;
-    flex: 0 0 auto;
-    justify-content: space-between;
-    align-items: center;
-    padding: 3em 6em;
-
-    /* ДЛЯ СТРАНИЧЕК МЕНЮ */
-    border-radius: 0 0 79px 79px;
-    box-shadow: 0 -8px 52px 0 rgba(238, 238, 238, 0.17);
-    background: rgb(30, 12, 6);
-}
-
-.logo {
-    width: 197px;
-    height: 83.8px;
-}
-
-.menu {
-    display: flex;
-}
-
-.menu__item {
-    list-style-type: none;
-    padding-left: 2.3em;
-}
-
-.menu-link {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 1.25em;
-    font-weight: 700;
-    line-height: 1.5em;
-    text-decoration: none;
-    color: #fff;
-}
-
-/* ДЛЯ СТРАНИЧЕК МЕНЮ (АКТИВНАЯ ССЫЛКА)*/
-
-.link_active{
-    color: rgb(163, 184, 215);
-}
-
-/* ХЭДЕР КОНЕЦ */
-
 /* OUR WORK - начало */
 .section_work {
     margin-top: 10%;
@@ -200,53 +153,6 @@
 }
 
 /* ANY QUESTIONS? - конец */
-
-/* ФУТЕР НАЧАЛО */
-
-.footer {
-    display: flex;
-    flex: 0 0 auto;
-    flex-direction: column;
-    align-items: start;
-    box-shadow: 0px -6px 52px 0px rgba(245, 245, 245, 0.17);
-    background: rgb(34, 32, 33);
-    padding: 5em 10em 4em 6em;
-}
-
-.container {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-}
-
-.container__address {
-    display: flex;
-    align-items: center;
-    padding-left: 5em;
-}
-
-.geo {
-    width: 25em;
-}
-
-.privacy {
-    padding-top: 4em;
-}
-
-.text-dec {
-    font-family: 'Inter', sans-serif;
-    font-size: 1.8em;
-    font-weight: 500;
-    line-height: 139.4%;
-    text-decoration: none;
-    color: #fff;
-}
-
-.privacy-link {
-    font-size: 1.25em;
-}
-
-/* ФУТЕР КОНЕЦ */
 
 
 @media screen and (max-width: 1024px) {
