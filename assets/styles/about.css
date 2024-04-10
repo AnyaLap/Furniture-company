@@ -154,7 +154,6 @@
 .section_questions__img-container__img {
     position: absolute;
     z-index: -1;
-    /* Остальные параметры разные на каждой странице */
     width: 477.31px;
     height: 482.47px;
     left: 870px;
