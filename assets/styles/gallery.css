@@ -52,141 +52,50 @@
 /* ХЭДЕР КОНЕЦ */
 
 /* OUR WORK - начало */
-
 .section_work {
-    scrollbar-color: transparent transparent;
-    scrollbar-width: 0px;
+    margin-top: 10%;
 }
 
 .title_work {
-    margin-left: 243px;
+    margin-left: 20%;
 }
 
 .carousel {
-    position: relative;
-    margin-left: 40px;
-    padding-top: 806px;
-    width: 1306px;
-    height: 806px;
-    perspective: 100px;
-    scrollbar-color: transparent transparent;
-    scrollbar-width: 0px;
+    margin: 10%;
 }
 
-.carousel__viewport {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    margin: 0;
-    padding: 0 10px;
-    width: 1306px;
-    height: 780px;
-    display: flex;
-    justify-items: center;
-    list-style-type: none;
-    overflow-x: scroll;
-    scroll-behavior: smooth;
-    scroll-snap-type: x mandatory;
+.slide {
+    background: none;
 }
 
-.carousel__slide {
-    position: relative;
-    display: flex;
-    flex: 0 0 100%;
-    width: 1130px;
-    height: 760px;
-    justify-content: center;
-    align-items: center;
-    flex-shrink: 0;
-    scroll-snap-align: center;
-    list-style-type: none;
+.carousel-indicators {
+    bottom: -70px;
 }
 
-.carousel__picture {
-    width: 1130px;
-    height: 754px;
+.carousel .carousel-indicators button {
+    background: transparent;
+    border: 4px solid rgb(114, 139, 173);
 }
 
-.carousel__snapper {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    scroll-snap-align: center;
-}
-
-.carousel__navigation {
-    right: 0;
-    bottom: 0;
-    left: 0;
-    text-align: center;
-}
-
-.carousel__navigation-list,
-.carousel__navigation-item {
-    display: inline-block;
-    list-style-type: none;
-}
-
-.carousel__navigation-button {
-    display: inline-block;
+.carousel-indicators [data-bs-target] {
+    box-sizing: content-box;
+    flex: 0 1 auto;
     width: 26px;
     height: 26px;
-    margin-right: 18px;
-    background: transparent;
+    padding: 0;
+    margin-right: 3px;
+    margin-left: 3px;
+    text-indent: -999px;
     background-clip: content-box;
-    border: 4px solid rgb(114, 139, 173);
     border-radius: 50%;
-    font-size: 0;
-    transition: transform 0.1s;
-    cursor: pointer;
 }
 
-.carousel__navigation-button:active {
-    background: white;
+.carousel-control-prev {
+    margin-left: -150px;
 }
 
-.carousel::before,
-.carousel::after,
-.carousel__prev,
-.carousel__next {
-    position: absolute;
-    top: 0;
-    margin-top: 30%;
-    width: 4rem;
-    height: 4rem;
-    transform: translateY(-50%);
-}
-
-.carousel::before,
-.carousel__prev {
-    left: -1rem;
-}
-
-.carousel::after,
-.carousel__next {
-    right: -1rem;
-}
-
-.carousel::before,
-.carousel::after {
-    content: '';
-    z-index: 1;
-    background-size: 52px 52px;
-    background-repeat: no-repeat;
-    background-position: center center;
-    pointer-events: none;
-}
-
-.carousel::before {
-    background-image: url(../images/arrow_left.png);
-}
-
-.carousel::after {
-    background-image: url(../images/arrow_right.png);
+.carousel-control-next {
+    margin-right: -150px;
 }
 
 /* OUR WORK - конец */
@@ -194,33 +103,33 @@
 /* THE WOOD WE WORK WITH - начало */
 
 .title_wood {
-    width: 746px;
-    margin-left: 243px;
+    width: clamp(240px, 72vw, 746px);
+    margin-left: 20%;
 }
 
 .section_wood__woods {
     display: grid;
-    grid-template-columns: repeat(auto-fill, 280px);
-    gap: 174px;
-    padding-left: 132px;
+    grid-template-columns: repeat(auto-fill, clamp(147px, 27vw, 280px));
+    gap: 15%;
+    padding-left: 10%;
 }
 
 .section_wood__woods .text_bold {
-    margin: 39px 0;
-    padding-left: 75px;
+    margin: 10% 0;
+    padding-left: clamp(25%, 7vw, 28%);
 }
 
 .proscons__point {
-    margin-bottom: 24px;
+    margin-left: -10%;
+    margin-bottom: 8%;
     display: flex;
-    align-items: center;
+    align-items: baseline;
     list-style-type: none;
 }
 
-.bullet {
-    margin-right: 10px;
-    width: 25px;
-    height: 25px;
+.bullet-pic {
+    margin-right: 2%;
+    width: clamp(13px, 2.4vw, 25px);
 }
 
 /* THE WOOD WE WORK WITH - конец */
@@ -228,7 +137,7 @@
 /* ANY QUESTIONS? - начало */
 
 .section_questions {
-    padding-right: 104px;
+    padding-right: 10%;
 }
 
 .title_questions {
@@ -237,17 +146,17 @@
 
 .form-container {
     display: flex;
-    padding-left: 122px;
+    padding-left: 10%;
     justify-content: space-between;
 }
 
 .form {
-    margin-right: 64px;
+    margin-right: 5%;
 }
 
 .input {
-    width: 598px;
-    height: 77px;
+    width: clamp(324px, 58vw, 598px);
+    height: clamp(40px, 7.5vmax, 77px);
     margin-bottom: 23px;
     padding: 18px;
     box-sizing: border-box;
@@ -258,20 +167,20 @@
 }
 
 .input::placeholder {
-    font-family: Inter;
-    font-size: 30px;
-    line-height: 139.4%;
+    font-family: 'Inter', sans-serif;
+    font-size: clamp(15px, 3vw, 30px);
+    line-height: clamp(18px, 3.5vw, 36px);
     text-align: left;
     align-items: top;
     color: rgba(217, 217, 217, 0.51);
 }
 
 .input_question {
-    height: 257px;
+    height: clamp(134px, 25vmax, 257px);
 }
 
 .form-container__text {
-    width: 546px;
+    max-width: clamp(272px, 53vw, 546px);
     text-align: right;
 }
 
@@ -338,3 +247,96 @@
 }
 
 /* ФУТЕР КОНЕЦ */
+
+
+@media screen and (max-width: 1024px) {
+
+    /* OUR WORK - начало */
+    .title_work {
+        padding-left: 10%;
+        margin: 0;
+    }
+
+    .carousel {
+        margin-top: 5%;
+        margin-right: 15%;
+        margin-left: 15%;
+        margin-bottom: 15%;
+    }
+
+    .carousel-indicators [data-bs-target] {
+        width: 16px;
+        height: 16px;
+    }
+
+    .carousel-control__arrow {
+        width: 26px;
+        height: 26px;
+    }
+
+    .carousel-control-prev {
+        margin-left: -15%;
+    }
+
+    .carousel-control-next {
+        margin-right: -15%;
+    }
+
+    /* OUR WORK - конец */
+
+
+    /* ANY QUESTIONS? - начало */
+
+    .section_questions__img-container__img {
+        display: none;
+    }
+
+    /* ANY QUESTIONS? - конец */
+}
+
+@media screen and (max-width: 1001px) {
+    .section_about {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    /* ОБЩИЕ - начало */
+    .title {
+        text-align: left;
+    }
+
+    /* ОБЩИЕ - конец */
+
+    /* THE WOOD WE WORK WITH - начало */
+    .title_wood {
+        margin-left: 10%;
+        margin-bottom: 5%;
+        text-align: left;
+    }
+
+    .proscons__point {
+        margin-left: -20%;
+    }
+
+    /* ANY QUESTIONS? - начало */
+    .form-container {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .form-container__text {
+        margin-bottom: 46px;
+        line-height: 120%;
+        text-align: left;
+    }
+
+    .title_questions {
+        padding-left: 10%;
+        text-align: left;
+    }
+
+    /* ANY QUESTIONS? - конец */
+
+}
