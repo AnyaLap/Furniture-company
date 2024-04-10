@@ -66,6 +66,10 @@
     max-width: clamp(195px, 43vw, 444px);
 }
 
+.img_small {
+    max-width: clamp(90px, 20vw, 205px);
+}
+
 .section {
     margin-bottom: 180px;
 }
