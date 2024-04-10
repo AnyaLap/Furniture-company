@@ -8,38 +8,41 @@
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="./assets/styles/normalize.css">
     <link rel="stylesheet" href="./assets/styles/style.css">
+    <link rel="stylesheet" href="./assets/styles/headerfooter.css">
     <link rel="stylesheet" href="./assets/styles/about.css">
 </head>
 <body class="body">
     <!-- ШАПКА -->
     <header class="header">
-        <img class="logo" src="./assets/images/logo.png" alt="logo">
-        <nav class="nav">
-            <ul class="menu">    
-                <li class="menu__item"><a class="menu-link" href="./gallery.html">Gallery</a></li>
-                <li class="menu__item"><a class="menu-link" href="./prices.html">Prices for services</a></li>
-                <li class="menu__item"><a class="menu-link link_active" href="./about.html">About Us</a></li>
-                <li class="menu__item"><a class="menu-link" href="./contact.html">Contact</a></li>
-            </ul>
-        </nav>
+        <div class="header__container">
+            <img class="logo" src="./assets/images/logo.png" alt="logo">
+            <nav class="nav">
+                <ul class="menu">    
+                    <li class="menu__item"><a class="menu-link" href="./gallery.html">Gallery</a></li>
+                    <li class="menu__item"><a class="menu-link" href="./prices.html">Prices for services</a></li>
+                    <li class="menu__item"><a class="menu-link link_active" href="./about.html">About Us</a></li>
+                    <li class="menu__item"><a class="menu-link" href="./contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
     
     <main>
         <!-- ABOUT US - начало -->
         
         <section class="section section_about">
-            <div class="group">
-                <div class="text group__text">
-                    <h1 class="title title_about">About Us</h1>
-                    <span class="text_bold">BIO CWT</span> - We manufacture solid wood products according to individual
-                    drawings. We make chairs, armchairs, wardrobes, beds and much more in our own workshop, equipped with all
-                    the necessary industrial equipment.
-                </div>
-                <div>
-                    <img class="section_about__img1" src="assets/images/about_carpenter.png" alt="">
-                </div>
+            <div class="text text_about">
+                <h1 class="title title_about">About Us</h1>
+                <span class="text_bold">BIO CWT</span> - We manufacture solid wood products according to individual
+                drawings. We make chairs, armchairs, wardrobes, beds and much more in our own workshop, equipped with all
+                the necessary industrial equipment.
             </div>
-            <img class="section_about__img2" src="assets/images/about_drawing.png" alt="">
+            <div class="section_about__images">
+                <div class="section_about__images__container1"><img class="section_about__images__container1__img1"
+                        src="assets/images/about_carpenter.png" alt=""></div>
+                <div class="section_about__images__container2"><img class="section_about__images__container2__img2"
+                        src="assets/images/about_drawing.png" alt=""></div>
+            </div>
         </section>
         
         <!-- ABOUT US - конец -->
@@ -106,24 +109,28 @@
         <!-- ANY QUESTIONS? - конец -->
         
     </main>
-    
     <!-- ФУТЕР -->
     <footer class="footer">
-        <section class="footer-container">
+        <section class="footer__container">
             <img class="logo" src="./assets/images/logo.png" alt="logo">
-            <div class="container__address phone">
-                <img class="phone-icon" src="./assets/images/phone_icon.png" alt="Phone">
+            <div class="footer__container-address phone">
+                <img class="icon" src="./assets/images/phone_icon.png" alt="Phone">
                 <a class="phone-link text-dec" href="#phone">+420 000 000 000</a>
             </div>
-            <div class="container__address geo">
+            <div class="footer__container-address geo">
                 <img class="icon" src="./assets/images/geo_icon.png" alt="Geo">
                 <p class="geo-text text-dec">Na Plzeňce 1166/0 150 00</p>
+            </div>
+            <div class="footer__container-address_media">
+                <img class="icon" src="./assets/images/geo_icon.png" alt="Geo">
+                <p class="text-dec">Na Plzeňce 1166/1 Прага 5 - Смихов, 150 00</p>
             </div>
         </section>
         <section class="privacy">
             <a class="privacy-link text-dec" href="./error.html">Privacy Policy</a>
         </section>
     </footer>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>

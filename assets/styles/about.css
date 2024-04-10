@@ -4,90 +4,57 @@
     background-size: cover;
 }
 
-/* ХЭДЕР НАЧАЛО */
-
-.header {
-    display: flex;
-    width: 100%;
-    flex: 0 0 auto;
-    justify-content: space-between;
-    align-items: center;
-    padding: 3em 6em;
-
-    /* ДЛЯ СТРАНИЧЕК МЕНЮ */
-    border-radius: 0 0 79px 79px;
-    box-shadow: 0 -8px 52px 0 rgba(238, 238, 238, 0.17);
-    background: rgb(30, 12, 6);
-}
-
-.logo {
-    width: 197px;
-    height: 83.8px;
-}
-
-.menu {
-    display: flex;
-}
-
-.menu__item {
-    list-style-type: none;
-    padding-left: 2.3em;
-}
-
-.menu-link {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 1.25em;
-    font-weight: 700;
-    line-height: 1.5em;
-    text-decoration: none;
-    color: #fff;
-}
-
-/* ДЛЯ СТРАНИЧЕК МЕНЮ (АКТИВНАЯ ССЫЛКА)*/
-
-.link_active {
-    color: rgb(163, 184, 215);
-}
-
-/* ХЭДЕР КОНЕЦ */
-
 /* ABOUT US - начало */
 .section_about {
-    position: relative;
     margin-top: 10%;
     margin-right: 10%;
-    padding-top: 60px;
     padding-left: 10%;
-    padding-right: 70px;
-    padding-bottom: 30px;
+    padding-right: 5%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    display: flex;
     background-color: rgb(30, 12, 6, 0.7);
     border-radius: 0px 42px 42px 0px;
     box-shadow: 0px 4px 52px 0px rgba(245, 245, 245, 0.17);
 }
 
-.group {
-    margin-bottom: 25px;
-    display: flex;
-    align-items: flex-end;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-
-.group__text {
-    margin-right: 3%;
+.text_about {
+    margin-right: 5%;
     margin-bottom: 20px;
-    max-width: 520px;
+    max-width: clamp(283px, 50vw, 516px);
+    align-self: flex-start;
 }
 
 .title_about {
     margin-top: 0;
-    margin-bottom: 100px;
+    margin-bottom: 15%;
 }
 
-.section_about__img2 {
-    display: block;
-    margin-left: auto;
-    margin-right: 32px;
+.section_about__images {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: max(280px, 40%);
+}
+
+.section_about__images__container2 {
+    margin-top: 25px;
+    align-self: flex-end;
+    max-width: min(180px, 50%);
+}
+
+.section_about__images__container1__img1 {
+    width: 100%;
+}
+
+.section_about__images__container2__img2 {
+    width: 100%;
+}
+
+@media screen and (max-width: 1001px) {
+    .section_about {
+        flex-direction: column;
+    }
 }
 
 /* ABOUT US - конец */
@@ -153,12 +120,12 @@
 }
 
 .form {
-    margin-right: 64px;
+    margin-right: 5%;
 }
 
 .input {
-    width: 598px;
-    height: 77px;
+    width: clamp(324px, 58vw, 598px);
+    height: clamp(40px, 7.5vmax, 77px);
     margin-bottom: 23px;
     padding: 18px;
     box-sizing: border-box;
@@ -169,20 +136,20 @@
 }
 
 .input::placeholder {
-    font-family: Inter;
-    font-size: 30px;
-    line-height: 139.4%;
+    font-family: 'Inter', sans-serif;
+    font-size: clamp(15px, 3vw, 30px);
+    line-height: clamp(18px, 3.5vw, 36px);
     text-align: left;
     align-items: top;
     color: rgba(217, 217, 217, 0.51);
 }
 
 .input_question {
-    height: 257px;
+    height: clamp(134px, 25vmax, 257px);
 }
 
 .form-container__text {
-    width: 546px;
+    max-width: clamp(272px, 53vw, 546px);
     text-align: right;
 }
 
@@ -204,76 +171,8 @@
 
 /* ANY QUESTIONS? - конец */
 
-/* ФУТЕР НАЧАЛО */
-
-.footer {
-    display: flex;
-    flex: 0 0 auto;
-    flex-direction: column;
-    align-items: start;
-    box-shadow: 0px -6px 52px 0px rgba(245, 245, 245, 0.17);
-    background: rgb(34, 32, 33);
-    padding: 5em 10em 4em 6em;
-}
-
-.footer-container {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-}
-
-.container__address {
-    display: flex;
-    align-items: center;
-    padding-left: 5em;
-    padding-bottom: 2em;
-}
-
-.geo {
-    width: 25em;
-}
-
-.privacy {
-    padding-top: 3em;
-}
-
-.text-dec {
-    font-family: 'Inter', sans-serif;
-    font-size: 1.8em;
-    font-weight: 500;
-    line-height: 139.4%;
-    text-decoration: none;
-    color: #fff;
-}
-
-.privacy-link {
-    font-size: 1.25em;
-}
-
-/* ФУТЕР КОНЕЦ */
-
-
-@media screen and (max-width: 1280px) {
-
-    /* ABOUT US - начало */
-    .section_about {
-        max-width: 80vw;
-    }
-
-    .section_about__img1 {
-        width: 350px;
-    }
-    .section_about__img2 {
-        width: 170px;
-    }
-    /* ABOUT US - конец */
-
-}
-
 
 @media screen and (max-width: 1024px) {
-
-
 
     /* THE WOOD WE WORK WITH - начало */
     .proscons__point {
@@ -317,18 +216,6 @@
 
 
     /* ANY QUESTIONS? - начало */
-    .input {
-        width: 324px;
-        height: 41px;
-    }
-
-    .input_question {
-        height: 134px;
-    }
-
-    .input::placeholder {
-        font-size: 20px;
-    }
 
     .section_questions__img-container__img {
         display: none;
@@ -341,37 +228,7 @@
 
     /* ОБЩИЕ - начало */
     .title {
-        font-size: 30px;
         text-align: left;
-    }
-
-    .text {
-        font-size: 15px;
-        line-height: 120%;
-        text-align: left;
-    }
-
-    .text_bold {
-        font-size: 15px;
-        line-height: 120%;
-    }
-
-    .img_small {
-        width: 111px;
-        height: 111px;
-    }
-
-    .button {
-        height: 33px;
-        padding: 7px 21px;
-    }
-
-    .button_small {
-        width: 86px;
-    }
-
-    .button_large {
-        width: 195px;
     }
 
     .section {
@@ -408,43 +265,14 @@
 
     /* THE WOOD WE WORK WITH - конец */
 
-    /* ABOUT US - начало */
-    .section_about {
-        margin-right: 20%;
-        padding-left: 10%;
-    }
-
-    .title_about {
-        margin-bottom: 38px;
-    }
-
-    .group__text {
-        max-width: 80%;
-    }
-
-    .section_about__img1 {
-        width: 269px;
-    }
-
-    .section_about__img2 {
-        width: 130px;
-    }
-
-    /* ABOUT US - конец */
-
     /* ANY QUESTIONS? - начало */
     .form-container {
         display: flex;
         flex-direction: column-reverse;
     }
 
-    .input::placeholder {
-        font-size: 13px;
-    }
-
     .form-container__text {
         margin-bottom: 46px;
-        width: 272px;
         line-height: 120%;
         text-align: left;
     }
