@@ -165,14 +165,10 @@
 
 /* ANY QUESTIONS? - конец */
 
+
+
+
 @media screen and (max-width: 1024px) {
-
-    /* THE WOOD WE WORK WITH - начало */
-    .proscons__point {
-        margin-left: -10%;
-    }
-
-    /* THE WOOD WE WORK WITH - конец */
 
     /* OUR WORK - начало */
     .title_work {
@@ -235,34 +231,6 @@
     }
 
     /* ОБЩИЕ - конец */
-
-    /* THE WOOD WE WORK WITH - начало */
-    .title_wood {
-        margin-bottom: 5%;
-    }
-
-    .section_wood__woods .text_bold {
-        margin: 20px 0;
-        padding-left: 30px;
-    }
-
-    .proscons__point .text {
-        line-height: 100%;
-        margin: 0;
-    }
-
-    .bullet {
-        margin-right: 10px;
-        width: 13px;
-        height: 12px;
-    }
-
-    .section_wood__woods {
-        gap: 5%;
-        padding-left: 132px;
-    }
-
-    /* THE WOOD WE WORK WITH - конец */
 
     /* ANY QUESTIONS? - начало */
     .form-container {
