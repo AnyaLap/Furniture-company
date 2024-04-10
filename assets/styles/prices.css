@@ -8,7 +8,6 @@
 
 .title_prices {
     margin-left: 15%;
-    margin-bottom: 5%;
 }
 
 .pricelist {
@@ -137,7 +136,6 @@
 
     /* OUR PRICES - начало */
     .title_prices {
-        margin-bottom: 5%;
         margin-left: 10%;
         text-align: left;
     }
