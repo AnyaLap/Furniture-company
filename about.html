@@ -12,20 +12,35 @@
     <link rel="stylesheet" href="./assets/styles/about.css">
 </head>
 <body class="body">
+
     <!-- ШАПКА -->
-    <header class="header">
-        <div class="header__container">
-            <img class="logo" src="./assets/images/logo.png" alt="logo">
-            <nav class="nav">
-                <ul class="menu">    
-                    <li class="menu__item"><a class="menu-link" href="./gallery.html">Gallery</a></li>
-                    <li class="menu__item"><a class="menu-link" href="./prices.html">Prices for services</a></li>
-                    <li class="menu__item"><a class="menu-link link_active" href="./about.html">About Us</a></li>
-                    <li class="menu__item"><a class="menu-link" href="./contact.html">Contact</a></li>
-                </ul>
-            </nav>
+  <header class="header">
+    <div class="header__container">
+      <img class="logo1" src="./assets/images/logo.png" alt="logo">
+        <nav class="nav">
+        <ul class="menu">
+           <li class="menu__item"><a class="menu-link" href="./gallery.html">Gallery</a></li>
+           <li class="menu__item"><a class="menu-link" href="./prices.html">Prices for services</a></li>
+           <li class="menu__item"><a class="menu-link link_active" href="./about.html">About Us</a></li>
+           <li class="menu__item"><a class="menu-link" href="./contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="burger-menu">
+        <input id="menu__toggle" type="checkbox"/>
+        <label class="menu__btn" for="menu__toggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+        <ul class="menu">
+           <li class="menu__item"><a class="menu-link" href="./gallery.html">Gallery</a></li>
+           <li class="menu__item"><a class="menu-link" href="./prices.html">Prices for services</a></li>
+           <li class="menu__item"><a class="menu-link link_active" href="./about.html">About Us</a></li>
+           <li class="menu__item"><a class="menu-link" href="./contact.html">Contact</a></li>
+        </ul>
         </div>
-    </header>
+    </div>
+  </header>
     
     <main>
         <!-- ABOUT US - начало -->
@@ -109,27 +124,31 @@
         <!-- ANY QUESTIONS? - конец -->
         
     </main>
+    
     <!-- ФУТЕР -->
     <footer class="footer">
         <section class="footer__container">
-            <img class="logo" src="./assets/images/logo.png" alt="logo">
-            <div class="footer__container-address phone">
-                <img class="icon" src="./assets/images/phone_icon.png" alt="Phone">
-                <a class="phone-link text-dec" href="#phone">+420 000 000 000</a>
-            </div>
-            <div class="footer__container-address geo">
-                <img class="icon" src="./assets/images/geo_icon.png" alt="Geo">
-                <p class="geo-text text-dec">Na Plzeňce 1166/0 150 00</p>
-            </div>
-            <div class="footer__container-address_media">
-                <img class="icon" src="./assets/images/geo_icon.png" alt="Geo">
-                <p class="text-dec">Na Plzeňce 1166/1 Прага 5 - Смихов, 150 00</p>
-            </div>
+          <img class="logo2" src="./assets/images/logo.png" alt="logo">
+          <div class="footer__container-address phone">
+            <img class="icon" src="./assets/images/phone_icon.png" alt="Phone">
+            <a class="phone-link text" href="#phone">+420 000 000 000</a>
+          </div>
+          <div class="footer__container-address geo">
+              <img class="icon" src="./assets/images/geo_icon.png" alt="Geo">
+              <p class="geo-text text">Na Plzeňce 1166/0 150 00</p>
+          </div>
+          <div class="footer__container-address_media">
+            <img class="icon" src="./assets/images/geo_icon.png" alt="Geo">
+            <p class="text text_size">Na Plzeňce 1166/1 Прага 5 - Смихов, 150 00</p>
+          </div>
         </section>
         <section class="privacy">
-            <a class="privacy-link text-dec" href="./error.html">Privacy Policy</a>
+          <a class="privacy-link text_dec" href="./error.html">Privacy Policy</a>
         </section>
-    </footer>
+        <section class="privacy_media">
+          <a class="privacy-link text_dec" href="./error.html">Политика конфиденциальности</a>
+        </section>
+      </footer> 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"

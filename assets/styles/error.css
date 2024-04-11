@@ -7,7 +7,7 @@
     background-image: url(../images/background_home.png), url(../images/background_logs.png);
     background-repeat: no-repeat;
     background-size: 35%, 65%;
-    min-height: 100vh;
+    /* min-height: 100vh; */
 } 
   .error{
     display: flex;

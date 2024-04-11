@@ -12,38 +12,56 @@
 .contact{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
-    margin: 160px 0;
+    justify-content: space-between;
+    margin: 10%;
 }
 .contact__section{
     display: flex;
+    flex-grow: 1;
     flex-direction: column;
     align-items: start;
 }
 .title-contact{
-    padding-left: 70px;
+    padding-bottom: 6%;
     margin-top: 0;
 }
+.address{
+    display: flex;
+    align-items: center;
+    padding: 6% 0;
+    width: 50%;
+}
+.address-icon{
+    padding-right: 5%;
+    height: 5vh;
+}
+.text-decor{
+    font-family: 'Inter', sans-serif;
+    font-size: 4vh;
+    font-weight: 500;
+    line-height: 139.4%;
+    text-decoration: none;
+    color: #fff;   
+}
 .contact__card{
-    margin-top: 33px;
+    margin-top: 2%;
+    flex-grow: 1;
 }
 .card{
     width: 100%;
+    height: 100%;
     border: 0;
-    border-radius: 48px;
-    width: 496px;
-    height: 432px;
+    border-radius: 10%;
+   
 }
 
-@media screen and(max-width:768){
+@media screen and(max-width:375){
+
+    .contact{
+        margin-top: 6%;
+    }
     .contact__card{
         width: 100vw;
-    }
-    .contact{
-        margin-top: 40px;
-    }
-    .title-contact{
-        font-size: 30px;
     }
 }
 
