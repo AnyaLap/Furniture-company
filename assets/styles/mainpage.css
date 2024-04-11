@@ -41,7 +41,7 @@ body{
 
 .img_1 {
     display: grid;
-    /*grid-area: img_1;*/
+    grid-area: img_1;
 }
 
 .img_2 {
