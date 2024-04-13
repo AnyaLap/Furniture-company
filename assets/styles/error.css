@@ -45,14 +45,14 @@
     text-decoration: none;
   }
 
-  @media screen and (max-width:1024px) {
+  @media screen and (max-width:768px) {
 
     .body {
-      background: url(../images/background_logs.png) left 350% top / 110% no-repeat, url(../images/background_404.png) center/ cover no-repeat;
+      background: url(../images/background_logs.png) left 220% top / 120% no-repeat, url(../images/background_404.png) center/ cover no-repeat;
       background-color:  #222021;
     }
 
-    .button_margin{
+    .button_flex{
       margin: 10%;
     } 
     .error-text{
