@@ -31,7 +31,7 @@
 
 .title {
     font-family: 'KyivType', sans-serif;
-    font-size: clamp(30px, 8.7vw, 90px);
+    font-size: clamp(30px, 7.5vw, 90px);
     line-height: 1.4;
     text-transform: uppercase;
     color: white;
