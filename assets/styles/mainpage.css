@@ -185,6 +185,53 @@
 
 /* OUR WORK - конец */
 
+/* ADVANTAGES НАЧАЛО */
+
+.section_advantages {
+    text-align: center;
+}
+
+.title_advantages {
+    margin-left: 10%;
+    max-width: clamp(300px, 100vw, 1040px);
+    text-align: left;
+}
+
+.section_advantages__content {
+    margin-bottom: 5%;
+    padding: 5%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.section_advantages__content__img {
+    margin-right: 5%;
+    max-width: 40%;
+}
+
+.staircase {
+    width: clamp(350px, 50vw, 609px);
+}
+
+.section_advantages__content__points {
+    max-width: 40%;
+    text-align: left;
+    list-style-type: none;
+}
+
+.section_advantages__content__points li {
+    margin-bottom: 5%;
+    font-size: clamp(15px, 2.5vw, 30px);
+}
+
+.button_advantages {
+    padding: clamp(7px, 0.5vmax, 11px) clamp(10px, 5.5vw, 70px);
+    max-width: clamp(225px, 43vw, 472px);
+    font-size: clamp(15px, 2.5vw, 30px);
+}
+
+/* ADVANTAGES конец */
+
 /* ABOUT US - начало */
 .section_about {
     margin-top: 10%;
@@ -306,6 +353,10 @@
     .section_products {
         padding-right: 5%;
     }
+
+    .section_advantages__content {
+        justify-content: space-between;
+}
 }
 
 @media screen and (max-width: 1100px) {
@@ -419,6 +470,27 @@
     .proscons__point {
         margin-left: -20%;
     }
+
+        /* ADVANTAGES начало */
+
+    .section_advantages__content {
+        flex-direction: column-reverse;
+        align-content: center;
+    }
+
+    .section_advantages__content__img {
+        max-width: 100vw;
+    }
+
+    .staircase {
+        width: 100%;
+    }
+
+    .section_advantages__content__points {
+        padding-right: 10%;
+        max-width: 100vw;
+    }
+    /* ADVANTAGES конец */
 
     /* ANY QUESTIONS? - начало */
     .form-container {
