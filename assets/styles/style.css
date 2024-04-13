@@ -39,14 +39,14 @@
 
 .text {
     font-family: 'Inter', sans-serif;
-    font-size: clamp(15px, 3vw, 30px);
+    font-size: clamp(15px, 2.5vw, 30px);
     line-height: 1.4;
     color: white;
 }
 
 .text_bold {
     font-family: 'Inter', sans-serif;
-    font-size: clamp(15px, 3vw, 30px);
+    font-size: clamp(15px, 2.5vw, 30px);
     font-weight: 700;
     line-height: 1.4;
     color: white;
