@@ -20,81 +20,87 @@
 }
 
 .body{
-    background:url(../images/background_logs.png) top left / 70% 17% no-repeat, url(../images/background_home.png) center/ cover no-repeat;
+    background:url(../images/background_logs.png) top left / 80% auto no-repeat, url(../images/background_home.png) center/ cover no-repeat;
     background-color:  #222021;
 } 
 
-.img_home {
-    display: grid;
-    max-width: 40%;
-    column-gap: 5%;
-    grid-template-columns: repeat(2, clamp(90px, 12vw, 205px));
-    grid-template-rows: repeat(3, clamp(90px, 12vmax, 205px));
-    grid-template-areas: 
-    ". img_1"
-    "img_2 ."
-    ". img_3";
-    
-
+.header {
+    background: none;
+    border: none;
+    box-shadow: none;
 }
 
-.img_1 {
-    display: grid;
-    grid-area: img_1;
-    width: clamp(90px, 12vw, 205px);
-}
+/* HOME НАЧАЛО */
 
-.img_2 {
-    display: grid;
-    grid-area: img_2;
-    width: clamp(90px, 12vw, 205px);
-}
-
-.img_3 {
-    display: grid;
-    grid-area: img_3;
-    width: clamp(90px, 12vw, 205px);
-}
-
-.img_line {
-    display: grid;
-    margin: 3%;
-}
-
-button {
-    margin-top: 10%;
-}
-
-.main_screen {
-    display: grid;
-}
-
-
-.home {
-    padding: 5%;
+.section_products {
     margin-top: 10%;
     margin-left: 10%;
+    padding-right: 10%;
+    padding-top: 5%;
+    padding-left: 5%;
+    padding-bottom: 5%;
+    width: 90vw;
     display: flex;
-    background-color: rgb(30, 12, 6, 0.7);
-    border-radius: 42px 0px 0px 42px;
+    justify-content: space-between;
+    background-color: rgb(30, 12, 6, 0.8);
+    border-radius: 42px 0 0 42px;
     box-shadow: 0px 4px 52px 0px rgba(245, 245, 245, 0.17);
+    overflow: hidden;
 }
 
-.title_home {
-    margin-top: 0;
-    max-width: 622px;
-    font-size: clamp(30px, 7.5vw, 90px);
-}
-
-.text_home {
-    color: #FFDBBB;
-    min-width: 333px;
-}
-
-.home__description {
+.section_products__text {
     max-width: 40%;
     margin-right: 10%;
 }
+
+.title_products {
+    margin-top: 0;
+    margin-bottom: 10%;
+    max-width: clamp(290px, 30vw, 400px);
+    font-size: clamp(30px, 7.5vw, 90px);
+}
+
+.text_products {
+    margin-bottom: 15%;
+    max-width: clamp(165px, 26vw, 333px);
+    color: #FFDBBB;
+}
+
+.line {
+    margin: 0;
+    max-height: 511px;
+}
+
+.img_products {
+    padding: 7% 0;
+    max-width: 40%;
+    display: grid;
+    grid-template-columns: repeat(2, clamp(90px, 12vw, 205px));
+    grid-template-rows: repeat(3, clamp(90px, 12vmax, 205px));
+    grid-template-areas:
+        ". img_prouducts__img1"
+        "img_prouducts__img2 ."
+        ". img_prouducts__img3";
+    column-gap: 3%;
+    align-items: center;
+}
+
+.img_prouducts__img1 {
+    width: clamp(90px, 12vw, 205px);
+    grid-area: img_prouducts__img1;
+}
+
+.img_prouducts__img2 {
+    width: clamp(90px, 12vw, 205px);
+    grid-area: img_prouducts__img2;
+}
+
+.img_prouducts__img3 {
+    width: clamp(90px, 12vw, 205px);
+    grid-area: img_prouducts__img3;
+}
+
+/* HOME КОНЕЦ */
 
 /* THE WOOD WE WORK WITH - начало */
 
@@ -287,8 +293,8 @@ button {
     z-index: -1;
     width: 477.31px;
     height: 482.47px;
-    left: 870px;
-    right: 180px;
+    left: 850px;
+    right: 200px;
     top: -180px;
     bottom: 0;
 }
@@ -296,7 +302,11 @@ button {
 /* ANY QUESTIONS? - конец */
 
 
-
+@media screen and (max-width: 1280px) {
+    .section_products {
+        padding-right: 5%;
+    }
+}
 
 @media screen and (max-width: 1100px) {
 
@@ -360,6 +370,35 @@ button {
     }
 
     /* ОБЩИЕ - конец */
+
+    /* Home  */
+    .section_products {
+        padding-left: 10%;
+        flex-direction: column;
+    }
+
+    .section_products__text {
+        max-width: 100%;
+        margin-right: 10%;
+    }
+
+    .button_small {
+        margin-bottom: 10%;
+    }
+
+    .line {
+        margin-left: 10%;
+        width: max(290px, 60vw);
+        height: 1px;
+        transform: rotateY('90');
+    }
+
+    .img_products {
+        max-width: 100%;
+        align-self: center;
+    }
+
+        /* Home  */
 
     .title_work {
         margin-left: 10%;
