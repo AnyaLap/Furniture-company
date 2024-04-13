@@ -17,6 +17,10 @@
 
 /* PRICE LIST - конец */
 
+.section_work {
+    display: none;
+}
+
 /* ANY QUESTIONS? - начало */
 
 .section_questions {
@@ -114,6 +118,42 @@
         text-align: left;
     }
     /* OUR PRICES - конец */
+
+        /* OUR WORK - начало */
+    .section_work {
+        display: contents;
+    }
+    
+    .title_work {
+        padding-left: 10%;
+    }
+
+    .carousel {
+        margin-top: 5%;
+        margin-right: 15%;
+        margin-left: 15%;
+        margin-bottom: 15%;
+    }
+
+    .carousel-indicators [data-bs-target] {
+        width: 16px;
+        height: 16px;
+    }
+
+    .carousel-control__arrow {
+        width: 26px;
+        height: 26px;
+    }
+
+    .carousel-control-prev {
+        margin-left: -15%;
+    }
+
+    .carousel-control-next {
+        margin-right: -15%;
+    }
+
+    /* OUR WORK - конец */
 
     /* ANY QUESTIONS? - начало */
     .form-container {
