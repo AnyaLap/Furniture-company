@@ -3,8 +3,9 @@
     margin: 0;
     box-sizing: border-box;
 }
+
 .body{
-    background:url(../images/background_logs.png) top left / 60% 100% no-repeat, url(../images/background_home.png) center/ cover no-repeat;
+    background:url(../images/background_logs.png) top left / 70% 100% no-repeat, url(../images/background_home.png) center/ cover no-repeat;
     background-color:  #222021;
 } 
   .header{
@@ -18,20 +19,24 @@
     align-items: center;
     margin-top: 30px;
   }
+
   .error-img{
     max-width: 100%;
     object-fit: cover;
   }
+
   .error-title{
     text-transform: none;
     font-weight: 500;
     line-height: 107.9%;
   }
+
   .error-text{
     font-weight: 400;
     color: rgb(255, 219, 187);
     padding-top: 30px;
   }
+
   .button_margin{
     margin: 60px;
     max-height: 50px;
