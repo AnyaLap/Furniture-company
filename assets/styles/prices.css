@@ -10,33 +10,9 @@
     margin-left: 15%;
 }
 
-.pricelist {
-    margin-top: 0;
-    margin-left: 5%;
-    margin-right: 20%;
-    width: auto;
-    height: 100%;
-    display: grid;
-    grid-template-columns: clamp(168px, 59vw, 611px) clamp(132px, 46vw 481px);
-    grid-template-rows: 60% 39%;
-    grid-template-areas: "pricelist__price1 pricelist__price2"
-                         "pricelist__price3 pricelist__price4";
-    align-items: center;
-    gap: 1rem;
-    overflow-x: auto;
-    overflow-y: hidden;
-    white-space: nowrap;
-    scrollbar-width: thin;
-    scrollbar-color: #D8D8D8 #A6A6A6;
-}
-
-.pricelist__price1,
-.pricelist__price3 {
-    max-width: clamp(168px, 59vw, 611px);
-}
-.pricelist__price2,
-.pricelist__price4 {
-    max-width: clamp(132px, 46vw, 481px);
+.section_prices__img {
+    margin-left: 15%;
+    width: clamp(307px, 87vw, 1114px);
 }
 
 /* PRICE LIST - конец */
@@ -108,16 +84,14 @@
 
 /* ANY QUESTIONS? - конец */
 
+@media screen and (max-width: 1350px) {
+    .section_prices__img {
+    margin-left: 5%;
+    }
+}
 
 
 @media screen and (max-width: 1024px) {
-
-    /* OUR PRICES - начало */
-    .pricelist {
-        margin-left: 5%;
-        margin-right: 5%;
-    }
-    /* OUR PRICES - конец */
 
     /* ANY QUESTIONS? - начало */
     .section_questions__img-container__img {
