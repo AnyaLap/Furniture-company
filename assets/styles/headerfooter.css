@@ -12,14 +12,6 @@
     src: url(../fonts/Inter-VariableFont_slnt_wght.ttf);
 }
 
-
-/* ФОН ГЛАВНОЙ СТРАНИЦЫ */
-
-/* .body{
-  background:url(../images/background_logs.png) top left / 70% 100% no-repeat, url(../images/background_home.png) center/ cover no-repeat;
-  background-color:  #222021;
-}  */
-
 /* ХЭДЕР НАЧАЛО */
 
 .header {
@@ -68,13 +60,10 @@
 
 /* ХЭДЕР КОНЕЦ */
 
-@media screen and (max-width: 767px) { 
+@media screen and (max-width: 768px) { 
 
   .header {
     border-radius: 0 0 30px 30px;
-    position: sticky;
-    top: 0;
-    z-index: 3;
   }
 
   .header__container {
@@ -85,7 +74,8 @@
 
   .burger-menu {
     display: block;
-    z-index: 3;
+    position: fixed;
+    z-index: 1;
   }
 
   #menu__toggle {
@@ -116,9 +106,9 @@
     display: flex;
     align-items: center;
     position: fixed;
-    top: 37px;
-    right: 50px;
-    width: 2rem;
+    top: 38px;
+    right: 40px;
+    width: 30px;
     height: 30px;
     cursor: pointer;
     z-index: 1;
@@ -130,7 +120,7 @@
     display: block;
     position: absolute;
     background-color: #fff;
-    border-radius: 30%;
+    border-radius: 20px;
     height: 4px;
     transition-duration: .25s;
   }
@@ -141,19 +131,13 @@
 
   .menu__btn > span::before {
     width: 50%;
-  }
-
-  .menu__btn > span::after {
-    width:50%;
-    right: 0;
-  }
-
-  .menu__btn > span::before {
     content: '';
     top: -8px;
   }
 
   .menu__btn > span::after {
+    width:50%;
+    right: 0;
     content: '';
     top: 8px;
   }
@@ -192,13 +176,13 @@
   box-shadow: 0px -6px 52px 0px rgba(245, 245, 245, 0.17);
   background: rgb(34, 32, 33);
   padding: 80px 220px 64px 108px;
-  /* padding: 5% 0 4% 6%; */
 }
 
 .footer__container-address_media,
 .privacy_media {
   display: none;
 }
+
 .footer__container {
   width: 80vw;
   display: flex;
@@ -209,6 +193,7 @@
 
 .logo2 {
   width: clamp(162px, 43vw, 197px);
+  margin-right: 10px;
 }
 
 .footer__container-address {
@@ -240,16 +225,21 @@
 }
 /* ФУТЕР - конец */
 
-@media screen and (max-width: 1023px){
+@media screen and (max-width: 1024px){
+
+  .footer{
+    padding: 80px;
+  }
+
   .icon{
     width: 50px;
   }
 }
 
-@media screen and (max-width: 767px){
+@media screen and (max-width: 768px){
 
   .footer{
-    padding: 15% 10% 10% 10%;
+    padding: 60px 40px;
   }
 
   .footer__container{
@@ -266,16 +256,15 @@
   .footer__container-address_media{
     display: flex;
     align-items: center;
-    padding-top: 20%;
+    padding-top: 40px;
   }
 
   .phone{
     order: 1;
-    align-self: flex-start;
   }
 
   .footer__container-address{
-    padding-top: 5%;
+    padding-top: 10px;
   }
 
   .icon{

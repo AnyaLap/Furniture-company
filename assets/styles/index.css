@@ -508,7 +508,11 @@
         padding-left: 10%;
         text-align: left;
     }
+}
 
-    /* ANY QUESTIONS? - конец */
+@media screen and (max-width:425px) {
 
+    .section_work{
+        margin-top: 140px;
+    }
 }

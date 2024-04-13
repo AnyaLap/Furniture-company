@@ -59,7 +59,7 @@
     display: none;
 }
 
-@media screen and (max-width: 600px){
+@media screen and (max-width: 768px){
 
     /* ANY QUESTIONS? - начало */
 
@@ -126,10 +126,7 @@
         height: 320px;  
     }
     .contact__section{
-    width: 80vw;
-    }
-    .text{
-        font-size: 20px;
+        width: 80vw;
     }
 }
 

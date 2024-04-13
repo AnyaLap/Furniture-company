@@ -5,8 +5,8 @@
 }
 
 .body{
-    background:url(../images/background_logs.png) top left / 70% 100% no-repeat, url(../images/background_home.png) center/ cover no-repeat;
-    background-color:  #222021;
+    background: url(../images/background_logs.png) top left / 65% auto no-repeat, url(../images/background_404.png) center/ cover no-repeat;
+    background-color: rgba(34, 32, 33);
 } 
   .header{
     border-radius: none;
@@ -17,7 +17,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 30px;
+    margin: 0 5%;
   }
 
   .error-img{
@@ -34,11 +34,28 @@
   .error-text{
     font-weight: 400;
     color: rgb(255, 219, 187);
-    padding-top: 30px;
+    padding-top: 2%;
   }
 
-  .button_margin{
-    margin: 60px;
-    max-height: 50px;
+  .button_flex{
+    display: flex;
+    align-items: center;
+    margin: 2%;
+    padding: 3%;
     text-decoration: none;
+  }
+
+  @media screen and (max-width:1024px) {
+
+    .body {
+      background: url(../images/background_logs.png) left 350% top / 110% no-repeat, url(../images/background_404.png) center/ cover no-repeat;
+      background-color:  #222021;
+    }
+
+    .button_margin{
+      margin: 10%;
+    } 
+    .error-text{
+      padding-top: 5%;
+    }
   }
