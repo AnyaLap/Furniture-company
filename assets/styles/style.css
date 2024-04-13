@@ -25,6 +25,10 @@
     
 }
 
+.main {
+    width: 100vw;
+}
+
 .title {
     font-family: 'KyivType', sans-serif;
     font-size: clamp(30px, 8.7vw, 90px);
