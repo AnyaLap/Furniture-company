@@ -64,11 +64,11 @@
 }
 
 .button_small {
-    width: 216px;
+    min-width: 216px;
 }
 
 .button_large {
-    width: 444px;
+    max-width: 444px;
 }
 
 .section {
@@ -212,41 +212,56 @@
 
 /* ABOUT US - начало */
 .section_about {
-    position: relative;
     margin-right: 10%;
-    padding-top: 60px;
     padding-left: 10%;
-    padding-right: 70px;
-    padding-bottom: 30px;
+    padding-right: 5%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    display: flex;
     background-color: rgb(30, 12, 6, 0.7);
     border-radius: 0px 42px 42px 0px;
     box-shadow: 0px 4px 52px 0px rgba(245, 245, 245, 0.17);
 }
 
-.section_about__group {
-    margin-bottom: 25px;
-    display: flex;
-    align-items: flex-end;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-
-.section_about__group__text {
-    margin-right: 3%;
+.text_about {
+    margin-right: 5%;
     margin-bottom: 20px;
-    max-width: 520px;
+    max-width: clamp(283px, 50vw, 516px);
+    align-self: flex-start;
 }
 
 .title_about {
     margin-top: 0;
-    margin-bottom: 100px;
+    margin-bottom: 15%;
 }
 
-.section_about__img2 {
-    display: block;
-    margin-left: auto;
-    margin-right: 32px;
+.section_about__images {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: max(280px, 40%);
 }
+
+.section_about__images__container2 {
+    margin-top: 25px;
+    align-self: flex-end;
+    max-width: min(180px, 50%);
+}
+
+.section_about__images__container1__img1 {
+    width: 100%;
+}
+
+.section_about__images__container2__img2 {
+    width: 100%;
+}
+
+@media screen and (max-width: 1001px) {
+    .section_about {
+        flex-direction: column;
+    }
+}
+
 /* ABOUT US - конец */
 
 
@@ -270,8 +285,8 @@
 }
 
 .input {
-    width: 598px;
-    height: 77px;
+    width: clamp(324px, 58vw, 598px);
+    height: clamp(40px, 7.5vmax, 77px);
     margin-bottom: 23px;
     padding: 18px;
     box-sizing: border-box;
@@ -282,20 +297,20 @@
 }
 
 .input::placeholder {
-    font-family: Inter;
-    font-size: 30px;
-    line-height: 139.4%;
+    font-family: 'Inter', sans-serif;
+    font-size: clamp(15px, 3vw, 30px);
+    line-height: clamp(18px, 3.5vw, 36px);
     text-align: left;
     align-items: top;
     color: rgba(217, 217, 217, 0.51);
 }
 
 .input_question {
-    height: 257px;
+    height: clamp(134px, 25vmax,257px);
 }
 
 .form-container__text {
-    width: 546px;
+    max-width: clamp(272px, 53vw, 546px);
     text-align: right;
 }
 
@@ -315,20 +330,6 @@
     bottom: 0;
 }
 /* ANY QUESTIONS? - конец */
-
-
-@media screen and (max-width: 1280px) {
-    /* ABOUT US - начало */
-    .section_about__img1 {
-        width: 350px;
-    }
-        
-    .section_about__img2 {
-        width: 170px;
-    }
-    /* ABOUT US - конец */
-
-}
 
 
 @media screen and (max-width: 1024px) {
@@ -373,19 +374,6 @@
 
     
     /* ANY QUESTIONS? - начало */
-    .input {
-        width: 324px;
-        height: 41px;
-    }
-
-    .input_question {
-        height: 134px;
-    }
-
-    .input::placeholder {
-        font-size: 20px;
-    }
-
     .section_questions__img-container__img {
         display: none;
     }
@@ -395,40 +383,6 @@
 @media screen and (max-width: 768px) {
 
     /* ОБЩИЕ - начало */
-    .title {
-        font-size: 30px;
-        text-align: left;
-    }
-    
-    .text {
-        font-size: 15px;
-        line-height: 120%;
-        text-align: left;
-    }
-    
-    .text_bold {
-        font-size: 15px;
-        line-height: 120%;
-    }
-
-    .img_small {
-        width: 90px;
-        height: 90px;
-    }
-    
-    .button {
-        height: 33px;
-        padding: 7px 21px;
-    }
-    
-    .button_small {
-        width: 86px;
-    }
-    
-    .button_large {
-        width: 195px;
-    }
-    
     .section {
         margin-bottom: 80px;
     }
@@ -474,30 +428,12 @@
         max-width: 285px;
     }
 
-    .section_about__img1 {
-        width: 269px;
-    }
-
-    .section_about__img2 {
-        width: 130px;
-    }
     /* ABOUT US - конец */
 
     /* ANY QUESTIONS? - начало */
     .form-container {
         display: flex;
         flex-direction: column-reverse;
-    }
-
-    .input::placeholder {
-        font-size: 13px;
-    }
-
-    .form-container__text {
-        margin-bottom: 46px;
-        width: 272px;
-        line-height: 120%;
-        text-align: left;
     }
 
     .title_questions {
